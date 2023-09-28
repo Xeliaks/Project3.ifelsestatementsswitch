@@ -72,8 +72,8 @@ public class Main {
         if ((x == 0) && (y == 0)) {
             System.out.println("X and Y are both zero");
         }
-        if (!((x == 0) && (y == 0))) {
-            System.out.println("X and Y are both not zero");
+        if (!(x == 0)) {
+            System.out.println("X is not zero");
         }
         //Part5 Demonstrate using conditions with user input.
         System.out.println("Please enter an integer: ");

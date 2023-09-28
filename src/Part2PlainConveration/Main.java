@@ -12,7 +12,7 @@ public class Main {
         else {
             int age = input.nextInt();
 
-            if (age < 6) {
+            if ((age < 6) && (age>0)) {
                 System.out.println("Yuo should probably go to kindergarten.");
             }
             if ((age > 7) && (age < 17)) {
@@ -27,8 +27,8 @@ public class Main {
             if (age > 60) {
                 System.out.println("You are retired. Time to have tons of free time");
             }
-            else {
-                System.out.println("You have either entered wrong number or you are immortal.");
+            if (age<=0) {
+                System.out.println("You have entered wrong number. Please try again.");
             }
         }
 
