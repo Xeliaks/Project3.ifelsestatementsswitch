@@ -29,7 +29,7 @@ public class Main {
                         System.out.println("I would recommend you to listen: Alter Bridge ");
 
                     }
-                    if ((age >= 18) && (genre.contains("lternative"))) {
+                    if ((age < 18) && (genre.contains("lternative"))) {
                         System.out.println("I would recommend you to listen: Arctic Monkeys");
                     }
                     if ((age >= 18) && (genre.contains("ock")) && (age < 40)) {
@@ -51,9 +51,11 @@ public class Main {
                     }
                     if ((age >= 40) && (genre.contains("lternative"))) {
                         System.out.println("I would recommend you to listen: Nirvana ");
-                    } else {
+                    }
+                    if (age<=0) {
                         System.out.println("Sorry! I have no idea what recommendation to give.");
                     }
+
                 }
             }
         }
